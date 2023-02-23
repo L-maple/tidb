@@ -160,7 +160,7 @@ All index entries in add by `index.Create`. We modify it to support new encoding
 
 Same goes for dropping index.
 
-#### Drop Partition
+#### Drop/Truncate Partition
 
 In global index, all index entries in a partition is not continuous. It is impossible to delete all index entries of a partition in a single  range deletion. So, we add a reorg state (just like add index), which scan records in the partition and remove relative index entries. 
 
